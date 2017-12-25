@@ -7,6 +7,18 @@
 - Since variation of wavelength intensity across the spectrum >> variation between samples at given wavelength, some standardisation is required
 - Current data is 1/6 of total sample: this notebook only aims to generate candidate models for future testing
 
+### Feature preprocessing
+
+- Converted values to z-score for each wavelength, essentially flattening the shape of the spectral signature
+- Sampled only between 400 nm and 822 nm (1230 points)
+- Took a mean across each 10 points (123 points)
+
+### Models attempted
+
+- Artificial neural networks built using Keras Sequential() with Dense() connetions
+- Lasso regression
+- Support Vector Regression
+- Random Forest Regression
 
 ### Notes: 24/12/2017
 
